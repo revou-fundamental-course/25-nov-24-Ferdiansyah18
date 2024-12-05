@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minicode Revou</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section>
+        <div class="section-left">
+            <h1>Kalkulator BMI</h1>
+            <br>
+            <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung sekarang di kalkulator BMI.</p>
+            <br>
+            <div class="form">
+                <div class="gender">
+                    <h2>Jenis Kelamin</h2>
+                    <div class="gender-radio">
+                        <input type="radio" value="Pria" id="pria" name="gender">
+                        <label for="pria">Pria</label>
+                        <input type="radio" value="Wanita" id="wanita" name="gender">
+                        <label for="wanita">Wanita</label>
+                    </div>
+                </div>
+                <div class="weight">
+                    <h2>Berat Badan (Kg)</h2>
+                    <input class="input-weight" type="number">
+                </div>
+                <div class="age">
+                    <h2>Usia (Tahun)</h2>
+                    <input class="input-age" type="number">
+                </div>
+                <div class="height">
+                    <h2>Tinggi Badan (Cm)</h2>
+                    <input class="input-height" type="number">
+                </div>
+                <div class="btns">
+                    <button onclick="hitung()">Hitung BMI</button>
+                    <button>Reset</button>
+                </div>
+            </div>
+            <div class="text">
+                <h2>Keunggulan fitur</h2>
+                <ol>
+                    <li>Menghitung berat badan</li>
+                    <li>Menentukan kategori berat badan ideal atau tidak</li>
+                    <li>Mempersiapkan program penurunan berat badan</li>
+                </ol>
+                <br>
+                <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkkonsultasi dengan orang yang memenuhi syarat seperti dokter.</p>
+                <br>
+                <p>Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/m<sup>2</sup></p>
+            </div>
+        </div>
+        <div class="section-right">
+            <h1>Hasil</h1>
+            <br>
+            <div class="hasil-section">
+                <p class="hasil-bb-text"></p>
+                <p class="hasil-bb-number"></p>
+                <p class="hasil-bb-text-desc"></p>
+                <button class="download-hasil">Download Hasil BMI</button>
+            </div>
+            <br>
+            <br>
+            <p class="kategori"></p><br>
+            <p class="cara-diet"></p><br>
+            <p class="anjuran"></p>
+            <br>
+            <div class="app-btn">
+                <button class="apps-btn">Konsultasi Ahli Gizi Via Aplikasi</button>
+                <button class="apps-btn">Registrasi Online Ahli Gizi</button>
+            </div>
+            <br>
+            <p>BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit sesorang. Anda perlu Konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda.</p>
+            <br>
+            <div class="penyakit-section">
+                <h2 class="penyakit"></h2>
+                <ul>
+                    <li class="penyakit-items1"></li>
+                    <li class="penyakit-items2"></li>
+                    <li class="penyakit-items3"></li>
+                    <li class="penyakit-items4"></li>
+                </ul>
+                <div class="app-btn">
+                    <button class="apps-btn">Konsultasi Ahli Gizi Via Aplikasi</button>
+                    <button class="apps-btn">Registrasi Online Ahli Gizi</button>
+                </div>
+            </div>  
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
